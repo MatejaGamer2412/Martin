@@ -1,3 +1,5 @@
+const http = require('http'); // Only keep THIS ONE line
+
 // The dummy server to keep Render happy
 http.createServer((req, res) => {
   res.write("Bot is alive!");
@@ -10,7 +12,6 @@ const { Movements, pathfinder, goals } = require('mineflayer-pathfinder');
 const { GoalBlock } = goals;
 const config = require('./settings.json');
 const express = require('express');
-const http = require('http'); // Only keep THIS ONE line
 // ============================================================
 // EXPRESS SERVER - Keep Render/Aternos alive
 // ============================================================
