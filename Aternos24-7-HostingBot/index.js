@@ -1,13 +1,12 @@
-// Create a dummy server so Render doesn't kill the bot
+const http = require('http'); // Only keep THIS ONE line
+
+// The dummy server to keep Render happy
 http.createServer((req, res) => {
-  res.write("Bot is running!");
+  res.write("Bot is alive!");
   res.end();
 }).listen(process.env.PORT || 8080);
 
-console.log("Keep-alive server is active.");
-
-// --- EXISTING BOT CODE STARTS HERE ---
-
+// --- REST OF YOUR CODE BELOW ---
 const mineflayer = require('mineflayer');
 const { Movements, pathfinder, goals } = require('mineflayer-pathfinder');
 const { GoalBlock } = goals;
