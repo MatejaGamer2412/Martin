@@ -7,7 +7,7 @@ function setupLeaveRejoin(bot, createBot) {
     let leaveTimer = null
     let jumpTimer = null
     let jumpOffTimer = null
-    let reconnectTimer = 5000
+    let reconnectTimer = 5
 
     // State
     let stopped = false
