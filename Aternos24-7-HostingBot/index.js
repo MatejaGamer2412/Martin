@@ -416,7 +416,7 @@ function createBot() {
         console.log('[Bot] Connection timeout - no spawn received');
         scheduleReconnect();
       }
-    }, 90000);
+    }, 9000);
 
     bot.once('spawn', () => {
       clearTimeout(connectionTimeout);
