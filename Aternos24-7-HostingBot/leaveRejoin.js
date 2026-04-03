@@ -7,11 +7,11 @@ function setupLeaveRejoin(bot, createBot) {
     let leaveTimer = null
     let jumpTimer = null
     let jumpOffTimer = null
-    let reconnectTimer = null
+    let reconnectTimer = 5000
 
     // State
     let stopped = false
-    let reconnectAttempts = 0
+    let reconnectAttempts = 100
     let lastLogAt = 0
 
     function logThrottled(msg, minGapMs = 2000) {
