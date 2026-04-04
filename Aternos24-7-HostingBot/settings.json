@@ -6,7 +6,7 @@
     "type": "offline"
   },
   "server": {
-    "ip": "TheGamingFriendsSMP.aternos.me",
+    "ip": "lightfish.aternos.host",
     "port": 12773,
     "version": "1.21.11"
   },
