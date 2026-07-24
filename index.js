@@ -127,15 +127,13 @@ app.get('/', (req, res) => {
             <div class="label">Server</div>
             <div class="value">${config.server.ip}</div>
           </div>
-
-          <a href="/tutorial" class="btn-guide">View Setup Guide</a>
           
           <div class="connection-bar">
             <div class="connection-fill" id="activity-bar"></div>
           </div>
           
           <p style="color: #64748b; font-size: 12px; margin-top: 15px;">
-            Live connection to Bot Process
+            Live connection to SMP Server Process
           </p>
         </div>
 
