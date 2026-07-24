@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>SMP Server Status</title>
+        <title>${config.name} Status</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
           body { 
@@ -109,8 +109,8 @@ app.get('/', (req, res) => {
       <body>
         <div class="container" id="main-container">
           <h1>
-            <span id="live-indicator" class="status-dot pulse" style="color: #ef4444;"></span>
-            SMP Server
+            <span id="live-indicator" class="status-dot pulse" style="color: #ef4444;"></span> 
+            ${config.name}
           </h1>
           
           <div class="stat-card">
@@ -124,17 +124,21 @@ app.get('/', (req, res) => {
           </div>
 
           <div class="stat-card">
+            <div class="label">Coordinates</div>
+            <div class="value" id="coords-text">Waiting...</div>
+          </div>
+
+          <div class="stat-card">
             <div class="label">Server</div>
             <div class="value">${config.server.ip}</div>
           </div>
-
-          
+ 
           <div class="connection-bar">
             <div class="connection-fill" id="activity-bar"></div>
           </div>
           
           <p style="color: #64748b; font-size: 12px; margin-top: 15px;">
-            Live connection to Bot Process
+            Live connection to SMP Server Process
           </p>
         </div>
 
