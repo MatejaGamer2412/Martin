@@ -108,6 +108,10 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <div class="container" id="main-container">
+          <h1>
+            <span id="live-indicator" class="status-dot pulse" style="color: #ef4444;"></span> 
+            ${config.name}
+          </h1>
           
           <div class="stat-card">
             <div class="label">Status</div>
@@ -120,16 +124,23 @@ app.get('/', (req, res) => {
           </div>
 
           <div class="stat-card">
+            <div class="label">Coordinates</div>
+            <div class="value" id="coords-text">Waiting...</div>
+          </div>
+
+          <div class="stat-card">
             <div class="label">Server</div>
             <div class="value">${config.server.ip}</div>
           </div>
- 
+
+          <a href="/tutorial" class="btn-guide">View Setup Guide</a>
+          
           <div class="connection-bar">
             <div class="connection-fill" id="activity-bar"></div>
           </div>
           
           <p style="color: #64748b; font-size: 12px; margin-top: 15px;">
-            Live connection to SMP Server Process
+            Live connection to Bot Process
           </p>
         </div>
 
