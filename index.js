@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>${config.name} Status</title>
+        <title>SMP Server Status</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
           body { 
@@ -109,8 +109,8 @@ app.get('/', (req, res) => {
       <body>
         <div class="container" id="main-container">
           <h1>
-            <span id="live-indicator" class="status-dot pulse" style="color: #ef4444;"></span> 
-            ${config.name}
+            <span id="live-indicator" class="status-dot pulse" style="color: #ef4444;"></span>
+            SMP Server
           </h1>
           
           <div class="stat-card">
@@ -121,11 +121,6 @@ app.get('/', (req, res) => {
           <div class="stat-card">
             <div class="label">Uptime</div>
             <div class="value" id="uptime-text">0h 0m 0s</div>
-          </div>
-
-          <div class="stat-card">
-            <div class="label">Coordinates</div>
-            <div class="value" id="coords-text">Waiting...</div>
           </div>
 
           <div class="stat-card">
