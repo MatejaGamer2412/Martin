@@ -124,11 +124,6 @@ app.get('/', (req, res) => {
           </div>
 
           <div class="stat-card">
-            <div class="label">Coordinates</div>
-            <div class="value" id="coords-text">Waiting...</div>
-          </div>
-
-          <div class="stat-card">
             <div class="label">Server</div>
             <div class="value">${config.server.ip}</div>
           </div>
@@ -140,7 +135,7 @@ app.get('/', (req, res) => {
           </div>
           
           <p style="color: #64748b; font-size: 12px; margin-top: 15px;">
-            Live connection to Bot Process
+            Live connection to SMP Server Process
           </p>
         </div>
 
