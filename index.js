@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>${config.name} Status</title>
+        <title>The Gaming Friends SMP Server Status</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
           body { 
