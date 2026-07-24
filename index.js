@@ -133,7 +133,6 @@ app.get('/', (req, res) => {
             <div class="value">${config.server.ip}</div>
           </div>
 
-          <a href="/tutorial" class="btn-guide">View Setup Guide</a>
           
           <div class="connection-bar">
             <div class="connection-fill" id="activity-bar"></div>
