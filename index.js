@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>SMP Server Status</title>
+        <title>${config.name} Status</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
           body { 
@@ -124,21 +124,18 @@ app.get('/', (req, res) => {
           </div>
 
           <div class="stat-card">
-            <div class="label">Coordinates</div>
-            <div class="value" id="coords-text">Waiting...</div>
-          </div>
-
-          <div class="stat-card">
             <div class="label">Server</div>
             <div class="value">${config.server.ip}</div>
           </div>
+
+          <a href="/tutorial" class="btn-guide">View Setup Guide</a>
           
           <div class="connection-bar">
             <div class="connection-fill" id="activity-bar"></div>
           </div>
           
           <p style="color: #64748b; font-size: 12px; margin-top: 15px;">
-            Live connection to SMP Server Process
+            Live connection to Bot Process
           </p>
         </div>
 
@@ -157,7 +154,7 @@ app.get('/', (req, res) => {
               
               const statusText = document.getElementById('status-text');
               const uptimeText = document.getElementById('uptime-text');
-              const coordsText = document.getElementById('coords-text');
+
               const liveDot = document.getElementById('live-indicator');
               const container = document.getElementById('main-container');
 
@@ -177,12 +174,6 @@ app.get('/', (req, res) => {
               // Update Uptime
               uptimeText.innerText = formatUptime(data.uptime);
 
-              // Update Coords
-              if (data.coords) {
-                coordsText.innerText = \`Coords: \${Math.floor(data.coords.x)}, \${Math.floor(data.coords.y)}, \${Math.floor(data.coords.z)}\`;
-              } else {
-                coordsText.innerText = 'Unknown Location';
-              }
 
             } catch (e) {
               document.getElementById('status-text').innerText = 'System Offline';
