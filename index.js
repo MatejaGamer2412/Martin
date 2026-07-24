@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>${config.name} Status</title>
+        <title>SMP Server Status</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
           body { 
@@ -124,11 +124,14 @@ app.get('/', (req, res) => {
           </div>
 
           <div class="stat-card">
+            <div class="label">Coordinates</div>
+            <div class="value" id="coords-text">Waiting...</div>
+          </div>
+
+          <div class="stat-card">
             <div class="label">Server</div>
             <div class="value">${config.server.ip}</div>
           </div>
-
-          <a href="/tutorial" class="btn-guide">View Setup Guide</a>
           
           <div class="connection-bar">
             <div class="connection-fill" id="activity-bar"></div>
