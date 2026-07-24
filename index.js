@@ -108,10 +108,6 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <div class="container" id="main-container">
-          <h1>
-            <span id="live-indicator" class="status-dot pulse" style="color: #ef4444;"></span> 
-            ${config.name}
-          </h1>
           
           <div class="stat-card">
             <div class="label">Status</div>
@@ -121,11 +117,6 @@ app.get('/', (req, res) => {
           <div class="stat-card">
             <div class="label">Uptime</div>
             <div class="value" id="uptime-text">0h 0m 0s</div>
-          </div>
-
-          <div class="stat-card">
-            <div class="label">Coordinates</div>
-            <div class="value" id="coords-text">Waiting...</div>
           </div>
 
           <div class="stat-card">
