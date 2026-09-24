@@ -32,7 +32,10 @@
       "messages": [
         "I'm a regular player",
         "Subscribe to The Gaming Friends!",
-        "I like to play Minecraft!"
+        "I like to play Minecraft!",
+        "Type /kit starter_kit for a Free Starter Kit!",
+        "Type /trade (Username) or crouch and Right-click a Player to Safely Trade with Players!",
+        "The Newest How to Play Book is V3!"
       ]
     },
     "chat-log": true,
