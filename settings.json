@@ -28,14 +28,17 @@
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 500,
+      "repeat-delay": 200,
       "messages": [
         "I'm a regular player",
         "Subscribe to The Gaming Friends!",
         "I like to play Minecraft!",
         "Type /kit starter_kit for a Free Starter Kit!",
         "Type /trade (Username) or crouch and Right-click a Player to Safely Trade with Players!",
-        "The Newest How to Play Book is V3!"
+        "The Newest How to Play Book is V3!",
+        "Don't forget to join our Discord Server! It's on our YouTube Channel: The Gaming Friends!",
+        "Type /rules to see all of the Rules of this SMP Server",
+        "There's a OP Base on this SMP Server, in the OP Base are The Strongest Loot on this SMP Server! To Find it, you have to go in the Lobby /lobby and then wenn you go a bit Forward there is a Sign with the exact coordinates of a book. The book is Readable, and inside of the book is another coordinates. You need at least 4 books that you can enter the OP Base. If you find the OP Base and go in it with no 4 books, then you are going to be Permanently Banned. Good luck!"
       ]
     },
     "chat-log": true,
